@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Harshitha Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body class="is-preload">
+  
+  <!-- Header -->
+  <div id="header">
+    <div class="top">
+      <div id="logo">
+        <h1 id="title">Harshitha Mohan</h1>
+        <p>Software Engineer</p>
+      </div>
+      <nav id="nav">
+        <ul>
+          <li><a href="#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+          <li><a href="#about" id="portfolio-link"><span class="icon solid fa-user-circle">About Me</span></a></li>
+          <li><a href="#skills" id="skills-link"><span class="icon solid fa-lightbulb">Skills</span></a></li>
+          <li><a href="#experience" id="experience-link"><span class="icon solid fa-briefcase">Work Experience</span></a></li>
+          <li><a href="#projects" id="projects-link"><span class="icon solid fa-tasks">Projects</span></a></li>
+          <li><a href="#connect" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="bottom">
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/harshitha-m-7145a2244/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+        <li><a href="https://github.com/harshi2520" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+        <li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div id="main">
+    <!-- Intro -->
+    <section id="top" class="one dark cover">
+      <div class="container">
+        <header>
+          <img src="images/Profile.jpeg" alt="Harshitha Mohan" style="border-radius: 50%; width: 350px; height: 350px; object-fit: cover; object-position: center 5%; display: block; margin: 0 auto;">
+          <h2 class="alt">Hello! I'm<br> <strong><span id="typed-name"></span></strong></h2>
+          <p style="font-size: 1em; line-height: 1;">Building the digital future with passion, precision, and persistence.</p>
+        </header>
+        <footer>
+          <a href="#about" class="button scrolly">Know more</a>
+        </footer>
+      </div>
+    </section>
+
+    <script>
+      const nameText = "Harshitha Mohan";
+      let index = 0;
+      const typingSpeed = 100;
+
+      function typeEffect() {
+        if (index < nameText.length) {
+          document.getElementById("typed-name").innerHTML += nameText.charAt(index);
+          index++;
+          setTimeout(typeEffect, typingSpeed);
+        }
+      }
+
+      window.onload = typeEffect;
+    </script>
+
+    <!-- About Me -->
+    <section id="about" class="three">
+      <div class="container">
+        <header><h2>About Me</h2></header>
+        <a href="#" class="image featured">
+          <img src="images/profile.png" alt="Profile" style="width: 450px; height: 450px; display: block; margin: 0 auto;" />
+        </a>
+        <p style="font-family: 'Segoe UI'; font-size: 21px; line-height: 1.8; text-align: center; max-width: 1000px;">
+          Hi, I’m Harshitha Mohan — a Computer Science grad student at Florida Atlantic University, passionate about building intelligent, efficient, and user-focused software systems.
+          My journey started with Java, Python, and web development, evolving into full-stack projects using React, TypeScript, Node.js, and PostgreSQL. I’ve developed shift schedulers, face-detection bots, and a green travel app with a carbon credit marketplace.
+          I’m also deeply interested in data analytics—from building Power BI dashboards to applying predictive models that drive real-world decisions.
+          With a strong foundation in AI, Cloud Computing, and Data Science, I strive to build smart systems that simplify processes and create meaningful impact. When I'm not coding, I enjoy working on side projects, analyzing data trends, and exploring innovations in tech.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="two">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- List of skills as icons -->
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="skill-logo">Java</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" class="skill-logo">C</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-logo">Python</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-logo">JavaScript</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-logo">React.js</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-logo">HTML</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-logo">CSS</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-logo">Node.js</div>
+          <div class="skill-box"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="skill-logo">MySQL</div>
+          <div class="skill-box"><img src="https://img.icons8.com/color/48/000000/power-bi.png" class="skill-logo">Power BI</div>
+          <div class="skill-box"><img src="https://img.icons8.com/color/48/000000/tableau-software.png" class="skill-logo">Tableau</div>
+          <div class="skill-box"><img src="https://img.icons8.com/color/48/000000/ms-excel.png" class="skill-logo">Excel</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="two">
+      <div class="container">
+        <h2>💼 Work Experience</h2>
+        <a href="comx.html" class="job-entry-link">
+          <div class="job-entry">
+            <div class="role">Software Intern</div>
+            <div class="company">ComX Softech Pvt Ltd – Bengaluru, India</div>
+            <div class="date">Sep 2023 – Mar 2024</div>
+          </div>
+        </a>
+        <a href="globalquest.html" class="job-entry-link">
+          <div class="job-entry">
+            <div class="role">Student Intern</div>
+            <div class="company">Global Quest Technologies – Bengaluru, India</div>
+            <div class="date">Jan 2023 – Jun 2023</div>
+          </div>
+        </a>
+        <a href="icsolutions.html" class="job-entry-link">
+          <div class="job-entry">
+            <div class="role">Front-end Developer Intern</div>
+            <div class="company">IC Solutions – Bengaluru, India</div>
+            <div class="date">Sep 2022 – Mar 2023</div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="two">
+      <div class="container">
+        <header><h2>Projects</h2></header>
+        <div class="gallery">
+          <a href="travel-green.html">
+            <div class="project-card">
+              <img src="images/Travel_Green.jpg" alt="Travel Green Project">
+              <div class="project-title">Travel Green (Carbon Credits)</div>
+            </div>
+          </a>
+          <a href="ecommerce-analysis.html">
+            <div class="project-card">
+              <img src="images/E-commerce.jpg" alt="E-commerce Data Analysis">
+              <div class="project-title">E-commerce Sales Data Analysis</div>
+            </div>
+          </a>
+          <a href="terror-bot.html">
+            <div class="project-card">
+              <img src="images/Terrorbot.jpg" alt="Terror Bot">
+              <div class="project-title">Terror-Bot</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="connect" class="lets-connect">
+      <h2>🤝 Let's Connect</h2>
+      <p>I'm always excited to connect, collaborate, or chat. Feel free to reach out via any platform below.</p>
+      <div class="connect-icons">
+        <a href="mailto:hmohan2516@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/harshitha-m-7145a2244/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/harshi2520" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <ul class="copyright">
+      <li>&copy; All rights reserved.</li>
+      <li>Design: <a href="http://html5up.net">Harshitha Mohan</a></li>
+    </ul>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
